@@ -27,11 +27,11 @@ fi
 CONF_PATH="form.conf"
 
 # 기존 server_name을 퍼블릭 IP로 변경
-if [ -f "$NGINX_CONF" ]; then
+if [ -f "$CONF_PATH" ]; then
     sudo sed -i "s/server_name .*/server_name $PUBLIC_IP;/" $CONF_PATH
     echo "Nginx server_name updated to $PUBLIC_IP"
 else
-    echo "Error: $NGINX_CONF does not exist. Exiting."
+    echo "Error: $CONF_PATH does not exist. Exiting."
     exit 1
 fi
 echo
@@ -40,11 +40,11 @@ echo "==== Move form.conf ===="
 echo
 
 # form.conf 파일을 이동하기 전에 존재 여부 확인
-if [ -f "$NGINX_CONF" ]; then
-    sudo mv $NGINX_CONF /etc/nginx/conf.d/
-    echo "$NGINX_CONF has been moved to /etc/nginx/conf.d/"
+if [ -f "$CONF_PATH" ]; then
+    sudo mv $CONF_PATH /etc/nginx/conf.d/$CONF_PATH
+    echo "$CONF_PATH has been moved to /etc/nginx/conf.d/$CONF_PATH"
 else
-    echo "$NGINX_CONF does not exist in the current directory. Exiting."
+    echo "$CONF_PATH does not exist in the current directory. Exiting."
     exit 1
 fi
 echo

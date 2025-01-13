@@ -25,7 +25,7 @@ else
 fi
 
 # Gunicorn 실행
-gunicorn --workers 4 --bind 127.0.0.1:8000 wsgi:app --daemon --log-file gunicorn.log
+gunicorn --workers 4 --bind 127.0.0.1:8000 wsgi:application --daemon --log-file gunicorn.log
 
 if [ $? -eq 0 ]; then
     echo "Flask app launched successfully with Gunicorn."

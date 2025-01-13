@@ -95,3 +95,9 @@ def create_answer():
 
         except ValueError:
             return jsonify({"message": "error"}), 400
+
+@routes.route('/image/main', methods=["GET"])
+def get_main_image():
+    if request.method == "GET":
+        image = images.get_main_image()
+        return jsonify({"image": image.url if image.url else None})

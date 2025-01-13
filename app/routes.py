@@ -74,7 +74,7 @@ def get_question(question_id):
 @routes.route("/choice/<int:question_id>", methods=["GET", "POST"])
 def get_choice_list(question_id):
     choice_list = choices.get_choices_by_question_id(question_id)
-    return jsonify({"choices": choice.to_dict() for choice in choice_list})
+    return jsonify({"choices": [choice.to_dict() for choice in choice_list]})
 
 
 @routes.route("/questions/count", methods=["GET"])

@@ -1,7 +1,6 @@
 from config import db
 from flask import request
 from app.models import Choices
-from sqlalchemy import desc
 
 def create_choice():
     data = request.get_json()
@@ -21,5 +20,5 @@ def get_choice_by_id(choice_id):
     return choice
 
 def get_choices_by_question_id(question_id):
-    choices = Choices.query.filter_by(question_id=question_id).order_by(desc(Choices.sqe)).all()
+    choices = Choices.query.filter_by(question_id=question_id).order_by(Choices.sqe).all()
     return choices

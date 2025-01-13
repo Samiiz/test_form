@@ -21,7 +21,7 @@ def signup_page():
         except ValueError:
             return jsonify({"message": "이미 존재하는 계정 입니다."}), 400
 
-@routes.route("/quetions/<int: questions_id>", methods=["GET", "POST"])
+@routes.route("/questions/<int:question_id>", methods=["GET", "POST"])
 def question_page(question_id):
     """
     특정 질문 ID에 대한 질문과 선택지를 반환합니다.

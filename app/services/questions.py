@@ -18,7 +18,7 @@ def create_question():
 
 
 def get_question_by_id(question_id):
-    question = Question.query.filter_by(id=question_id).first()
+    question = Question.query.filter_by(id=question_id, is_active=True).first()
     return question
 
 

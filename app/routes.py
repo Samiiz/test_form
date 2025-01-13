@@ -15,8 +15,7 @@ def signup_page():
     if request.method == "POST":
         try:
             user = users.create_user()
-            session["user_id"] = user.id
-            return jsonify({"message": f"{user.name}님 회원가입을 축하합니다"}), 201
+            return jsonify({"message": f"{user.name}님 회원가입을 축하합니다", "user_id": user.id}), 201
 
         except ValueError:
             return jsonify({"message": "이미 존재하는 계정 입니다."}), 400
@@ -43,14 +42,20 @@ def question_page(question_id):
         "choices": choice_data,
     })
 
-@routes.route('/submit', methods=["GET", 'POST'])
+@routes.route("/questions/count", methods=["GET"])
+def count_question():
+    if request.method == "GET":
+        count = questions.get_question_count()
+        return  jsonify({"total": count})
+
+@routes.route('/answers', methods=["GET", 'POST'])
 def submit_answer():
     if request.method == 'POST':
         for answer in request.get_json():
             answers.create_answer(answer)
-
-        user_id = int(session.get('user_id'))
-        session.pop('user_id')
+            user_id = int(answer.user_id)
+#        user_id = int(session.get('user_id'))
+#        session.pop('user_id')
 
         return jsonify({"message": f"User: {user_id}'s answers Success Create"}), 201
 
@@ -86,15 +91,16 @@ def create_choice():
         except ValueError:
             return jsonify({"message": "error"}), 400
 
-@routes.route("/answer", methods=["GET", "POST"])
-def create_answer():
-    if request.method == "POST":
-        try:
-            answer = answers.create_answer(request.get_json())
-            return jsonify({"message": f"User: {answer.user_id}'s answer Success Create"}), 201
-
-        except ValueError:
-            return jsonify({"message": "error"}), 400
+#@routes.route("/answer", methods=["GET", "POST"])
+#def create_answer():
+#    if request.method == "POST":
+#        try:
+#            print(request.get_json())
+#            answer = answers.create_answer(request.get_json())
+#            return jsonify({"message": f"User: {answer.user_id}'s answer Success Create"}), 201
+#
+#        except ValueError:
+#            return jsonify({"message": "error"}), 400
 
 @routes.route('/image/main', methods=["GET"])
 def get_main_image():

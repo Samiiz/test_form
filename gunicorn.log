@@ -2061,3 +2061,707 @@ TypeError: question_page() got an unexpected keyword argument 'questions_id'
 [2025-01-13 05:14:19 +0000] [207576] [INFO] Booting worker with pid: 207576
 [2025-01-13 05:14:19 +0000] [207578] [INFO] Booting worker with pid: 207578
 [2025-01-13 05:14:19 +0000] [207579] [INFO] Booting worker with pid: 207579
+[2025-01-13 05:24:27 +0000] [207573] [INFO] Handling signal: term
+[2025-01-13 05:24:27 +0000] [207574] [INFO] Worker exiting (pid: 207574)
+[2025-01-13 05:24:27 +0000] [207576] [INFO] Worker exiting (pid: 207576)
+[2025-01-13 05:24:27 +0000] [207578] [INFO] Worker exiting (pid: 207578)
+[2025-01-13 05:24:27 +0000] [207579] [INFO] Worker exiting (pid: 207579)
+[2025-01-13 05:24:27 +0000] [207573] [ERROR] Worker (pid:207574) was sent SIGTERM!
+[2025-01-13 05:24:28 +0000] [207573] [ERROR] Worker (pid:207576) was sent SIGTERM!
+[2025-01-13 05:24:28 +0000] [207573] [ERROR] Worker (pid:207578) was sent SIGTERM!
+[2025-01-13 05:24:28 +0000] [207573] [INFO] Shutting down: Master
+[2025-01-13 05:24:31 +0000] [212810] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:24:31 +0000] [212810] [INFO] Listening at: http://127.0.0.1:8000 (212810)
+[2025-01-13 05:24:31 +0000] [212810] [INFO] Using worker: sync
+[2025-01-13 05:24:31 +0000] [212811] [INFO] Booting worker with pid: 212811
+[2025-01-13 05:24:31 +0000] [212812] [INFO] Booting worker with pid: 212812
+[2025-01-13 05:24:31 +0000] [212813] [INFO] Booting worker with pid: 212813
+[2025-01-13 05:24:31 +0000] [212815] [INFO] Booting worker with pid: 212815
+[2025-01-13 05:30:28 +0000] [212810] [INFO] Handling signal: term
+[2025-01-13 05:30:28 +0000] [212811] [INFO] Worker exiting (pid: 212811)
+[2025-01-13 05:30:28 +0000] [212812] [INFO] Worker exiting (pid: 212812)
+[2025-01-13 05:30:28 +0000] [212813] [INFO] Worker exiting (pid: 212813)
+[2025-01-13 05:30:28 +0000] [212815] [INFO] Worker exiting (pid: 212815)
+[2025-01-13 05:30:29 +0000] [212810] [ERROR] Worker (pid:212811) was sent SIGTERM!
+[2025-01-13 05:30:29 +0000] [212810] [ERROR] Worker (pid:212812) was sent SIGTERM!
+[2025-01-13 05:30:29 +0000] [212810] [ERROR] Worker (pid:212813) was sent SIGTERM!
+[2025-01-13 05:30:29 +0000] [212810] [INFO] Shutting down: Master
+[2025-01-13 05:30:37 +0000] [213458] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:30:37 +0000] [213458] [INFO] Listening at: http://127.0.0.1:8000 (213458)
+[2025-01-13 05:30:37 +0000] [213458] [INFO] Using worker: sync
+[2025-01-13 05:30:37 +0000] [213460] [INFO] Booting worker with pid: 213460
+[2025-01-13 05:30:37 +0000] [213462] [INFO] Booting worker with pid: 213462
+[2025-01-13 05:30:37 +0000] [213464] [INFO] Booting worker with pid: 213464
+[2025-01-13 05:30:37 +0000] [213465] [INFO] Booting worker with pid: 213465
+[2025-01-13 05:33:55 +0000] [213458] [INFO] Handling signal: term
+[2025-01-13 05:33:55 +0000] [213460] [INFO] Worker exiting (pid: 213460)
+[2025-01-13 05:33:55 +0000] [213462] [INFO] Worker exiting (pid: 213462)
+[2025-01-13 05:33:55 +0000] [213464] [INFO] Worker exiting (pid: 213464)
+[2025-01-13 05:33:55 +0000] [213465] [INFO] Worker exiting (pid: 213465)
+[2025-01-13 05:33:55 +0000] [213458] [ERROR] Worker (pid:213460) was sent SIGTERM!
+[2025-01-13 05:33:55 +0000] [213458] [ERROR] Worker (pid:213462) was sent SIGTERM!
+[2025-01-13 05:33:55 +0000] [213458] [ERROR] Worker (pid:213464) was sent SIGTERM!
+[2025-01-13 05:33:56 +0000] [213458] [INFO] Shutting down: Master
+[2025-01-13 05:33:57 +0000] [213793] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:33:57 +0000] [213793] [INFO] Listening at: http://127.0.0.1:8000 (213793)
+[2025-01-13 05:33:57 +0000] [213793] [INFO] Using worker: sync
+[2025-01-13 05:33:57 +0000] [213795] [INFO] Booting worker with pid: 213795
+[2025-01-13 05:33:58 +0000] [213798] [INFO] Booting worker with pid: 213798
+[2025-01-13 05:33:58 +0000] [213799] [INFO] Booting worker with pid: 213799
+[2025-01-13 05:33:58 +0000] [213800] [INFO] Booting worker with pid: 213800
+[2025-01-13 05:34:43,006] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'asd12asd3a@asfd.com' for key 'users.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 17, in signup_page
+    user = users.create_user()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/users.py", line 15, in create_user
+    db.session.commit()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'asd12asd3a@asfd.com' for key 'users.email'")
+[SQL: INSERT INTO users (name, age, gender, email, created_at, updated_at) VALUES (%(name)s, %(age)s, %(gender)s, %(email)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'name': '헬th췍 요정', 'age': 'teen', 'gender': 'male', 'email': 'asd12asd3a@asfd.com', 'created_at': datetime.datetime(2025, 1, 13, 14, 34, 43, 3162, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul')), 'updated_at': datetime.datetime(2025, 1, 13, 14, 34, 43, 3168, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul'))}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2025-01-13 05:51:00 +0000] [213793] [INFO] Handling signal: term
+[2025-01-13 05:51:00 +0000] [213795] [INFO] Worker exiting (pid: 213795)
+[2025-01-13 05:51:00 +0000] [213798] [INFO] Worker exiting (pid: 213798)
+[2025-01-13 05:51:00 +0000] [213799] [INFO] Worker exiting (pid: 213799)
+[2025-01-13 05:51:00 +0000] [213800] [INFO] Worker exiting (pid: 213800)
+[2025-01-13 05:51:01 +0000] [213793] [ERROR] Worker (pid:213795) was sent SIGTERM!
+[2025-01-13 05:51:01 +0000] [213793] [ERROR] Worker (pid:213798) was sent SIGTERM!
+[2025-01-13 05:51:01 +0000] [213793] [ERROR] Worker (pid:213799) was sent SIGTERM!
+[2025-01-13 05:51:01 +0000] [213793] [INFO] Shutting down: Master
+[2025-01-13 05:51:04 +0000] [214826] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:51:04 +0000] [214826] [INFO] Listening at: http://127.0.0.1:8000 (214826)
+[2025-01-13 05:51:04 +0000] [214826] [INFO] Using worker: sync
+[2025-01-13 05:51:04 +0000] [214828] [INFO] Booting worker with pid: 214828
+[2025-01-13 05:51:04 +0000] [214831] [INFO] Booting worker with pid: 214831
+[2025-01-13 05:51:04 +0000] [214832] [INFO] Booting worker with pid: 214832
+[2025-01-13 05:51:04 +0000] [214833] [INFO] Booting worker with pid: 214833
+[2025-01-13 05:52:46 +0000] [214826] [INFO] Handling signal: term
+[2025-01-13 05:52:46 +0000] [214828] [INFO] Worker exiting (pid: 214828)
+[2025-01-13 05:52:46 +0000] [214831] [INFO] Worker exiting (pid: 214831)
+[2025-01-13 05:52:46 +0000] [214832] [INFO] Worker exiting (pid: 214832)
+[2025-01-13 05:52:46 +0000] [214833] [INFO] Worker exiting (pid: 214833)
+[2025-01-13 05:52:47 +0000] [214826] [ERROR] Worker (pid:214828) was sent SIGTERM!
+[2025-01-13 05:52:47 +0000] [214826] [ERROR] Worker (pid:214831) was sent SIGTERM!
+[2025-01-13 05:52:47 +0000] [214826] [ERROR] Worker (pid:214832) was sent SIGTERM!
+[2025-01-13 05:52:47 +0000] [214826] [INFO] Shutting down: Master
+[2025-01-13 05:52:53 +0000] [215218] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:52:53 +0000] [215218] [INFO] Listening at: http://127.0.0.1:8000 (215218)
+[2025-01-13 05:52:53 +0000] [215218] [INFO] Using worker: sync
+[2025-01-13 05:52:53 +0000] [215220] [INFO] Booting worker with pid: 215220
+[2025-01-13 05:52:53 +0000] [215222] [INFO] Booting worker with pid: 215222
+[2025-01-13 05:52:53 +0000] [215224] [INFO] Booting worker with pid: 215224
+[2025-01-13 05:52:53 +0000] [215225] [INFO] Booting worker with pid: 215225
+[2025-01-13 05:52:56,220] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'adndsfsdjasi123@csokm.com' for key 'users.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 17, in signup_page
+    user = users.create_user()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/users.py", line 15, in create_user
+    db.session.commit()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'adndsfsdjasi123@csokm.com' for key 'users.email'")
+[SQL: INSERT INTO users (name, age, gender, email, created_at, updated_at) VALUES (%(name)s, %(age)s, %(gender)s, %(email)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'name': '도우미', 'age': 'teen', 'gender': 'male', 'email': 'adndsfsdjasi123@csokm.com', 'created_at': datetime.datetime(2025, 1, 13, 14, 52, 56, 216763, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul')), 'updated_at': datetime.datetime(2025, 1, 13, 14, 52, 56, 216770, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul'))}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2025-01-13 05:53:31,252] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 18, in signup_page
+    return jsonify({"message": f"{user.name}님 회원가입을 축하합니다"}, user), 201
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib64/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type User is not JSON serializable
+[2025-01-13 05:55:16 +0000] [215218] [INFO] Handling signal: term
+[2025-01-13 05:55:16 +0000] [215220] [INFO] Worker exiting (pid: 215220)
+[2025-01-13 05:55:16 +0000] [215222] [INFO] Worker exiting (pid: 215222)
+[2025-01-13 05:55:16 +0000] [215224] [INFO] Worker exiting (pid: 215224)
+[2025-01-13 05:55:16 +0000] [215225] [INFO] Worker exiting (pid: 215225)
+[2025-01-13 05:55:16 +0000] [215218] [ERROR] Worker (pid:215220) was sent SIGTERM!
+[2025-01-13 05:55:16 +0000] [215218] [ERROR] Worker (pid:215222) was sent SIGTERM!
+[2025-01-13 05:55:16 +0000] [215218] [ERROR] Worker (pid:215224) was sent SIGTERM!
+[2025-01-13 05:55:17 +0000] [215218] [INFO] Shutting down: Master
+[2025-01-13 05:55:21 +0000] [215944] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 05:55:21 +0000] [215944] [INFO] Listening at: http://127.0.0.1:8000 (215944)
+[2025-01-13 05:55:21 +0000] [215944] [INFO] Using worker: sync
+[2025-01-13 05:55:21 +0000] [215946] [INFO] Booting worker with pid: 215946
+[2025-01-13 05:55:21 +0000] [215947] [INFO] Booting worker with pid: 215947
+[2025-01-13 05:55:21 +0000] [215949] [INFO] Booting worker with pid: 215949
+[2025-01-13 05:55:21 +0000] [215948] [INFO] Booting worker with pid: 215948
+[2025-01-13 05:55:25,068] ERROR in app: Exception on /signup [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'adndsfsdjaasdsi123@csokm.com' for key 'users.email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 17, in signup_page
+    user = users.create_user()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/users.py", line 15, in create_user
+    db.session.commit()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/sqlalchemy/engine/default.py", line 942, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'adndsfsdjaasdsi123@csokm.com' for key 'users.email'")
+[SQL: INSERT INTO users (name, age, gender, email, created_at, updated_at) VALUES (%(name)s, %(age)s, %(gender)s, %(email)s, %(created_at)s, %(updated_at)s)]
+[parameters: {'name': '도우미', 'age': 'teen', 'gender': 'male', 'email': 'adndsfsdjaasdsi123@csokm.com', 'created_at': datetime.datetime(2025, 1, 13, 14, 55, 25, 64189, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul')), 'updated_at': datetime.datetime(2025, 1, 13, 14, 55, 25, 64196, tzinfo=zoneinfo.ZoneInfo(key='Asia/Seoul'))}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2025-01-13 06:00:13 +0000] [215944] [INFO] Handling signal: term
+[2025-01-13 06:00:13 +0000] [215946] [INFO] Worker exiting (pid: 215946)
+[2025-01-13 06:00:13 +0000] [215947] [INFO] Worker exiting (pid: 215947)
+[2025-01-13 06:00:13 +0000] [215948] [INFO] Worker exiting (pid: 215948)
+[2025-01-13 06:00:14 +0000] [215949] [INFO] Worker exiting (pid: 215949)
+[2025-01-13 06:00:14 +0000] [215944] [ERROR] Worker (pid:215946) was sent SIGTERM!
+[2025-01-13 06:00:14 +0000] [215944] [ERROR] Worker (pid:215947) was sent SIGTERM!
+[2025-01-13 06:00:14 +0000] [215944] [ERROR] Worker (pid:215948) was sent SIGTERM!
+[2025-01-13 06:00:14 +0000] [215944] [INFO] Shutting down: Master
+[2025-01-13 06:00:16 +0000] [216503] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:00:16 +0000] [216503] [INFO] Listening at: http://127.0.0.1:8000 (216503)
+[2025-01-13 06:00:16 +0000] [216503] [INFO] Using worker: sync
+[2025-01-13 06:00:16 +0000] [216504] [INFO] Booting worker with pid: 216504
+[2025-01-13 06:00:16 +0000] [216507] [INFO] Booting worker with pid: 216507
+[2025-01-13 06:00:16 +0000] [216508] [INFO] Booting worker with pid: 216508
+[2025-01-13 06:00:16 +0000] [216509] [INFO] Booting worker with pid: 216509
+[2025-01-13 06:41:56 +0000] [216503] [INFO] Handling signal: term
+[2025-01-13 06:41:56 +0000] [216504] [INFO] Worker exiting (pid: 216504)
+[2025-01-13 06:41:56 +0000] [216507] [INFO] Worker exiting (pid: 216507)
+[2025-01-13 06:41:56 +0000] [216508] [INFO] Worker exiting (pid: 216508)
+[2025-01-13 06:41:56 +0000] [216509] [INFO] Worker exiting (pid: 216509)
+[2025-01-13 06:41:56 +0000] [216503] [ERROR] Worker (pid:216504) was sent SIGTERM!
+[2025-01-13 06:41:56 +0000] [216503] [ERROR] Worker (pid:216507) was sent SIGTERM!
+[2025-01-13 06:41:57 +0000] [216503] [ERROR] Worker (pid:216508) was sent SIGTERM!
+[2025-01-13 06:41:57 +0000] [216503] [INFO] Shutting down: Master
+[2025-01-13 06:41:59 +0000] [218292] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:41:59 +0000] [218292] [INFO] Listening at: http://127.0.0.1:8000 (218292)
+[2025-01-13 06:41:59 +0000] [218292] [INFO] Using worker: sync
+[2025-01-13 06:41:59 +0000] [218293] [INFO] Booting worker with pid: 218293
+[2025-01-13 06:42:00 +0000] [218295] [INFO] Booting worker with pid: 218295
+[2025-01-13 06:42:00 +0000] [218297] [INFO] Booting worker with pid: 218297
+[2025-01-13 06:42:00 +0000] [218299] [INFO] Booting worker with pid: 218299
+[2025-01-13 06:46:19,628] ERROR in app: Exception on /questions/count [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 49, in count_question
+    return  jasonify({"total": count})
+            ^^^^^^^^
+NameError: name 'jasonify' is not defined. Did you mean: 'jsonify'?
+[2025-01-13 06:47:36 +0000] [218292] [INFO] Handling signal: term
+[2025-01-13 06:47:36 +0000] [218293] [INFO] Worker exiting (pid: 218293)
+[2025-01-13 06:47:36 +0000] [218295] [INFO] Worker exiting (pid: 218295)
+[2025-01-13 06:47:36 +0000] [218297] [INFO] Worker exiting (pid: 218297)
+[2025-01-13 06:47:36 +0000] [218299] [INFO] Worker exiting (pid: 218299)
+[2025-01-13 06:47:37 +0000] [218292] [ERROR] Worker (pid:218293) was sent SIGTERM!
+[2025-01-13 06:47:37 +0000] [218292] [ERROR] Worker (pid:218295) was sent SIGTERM!
+[2025-01-13 06:47:37 +0000] [218292] [ERROR] Worker (pid:218297) was sent SIGTERM!
+[2025-01-13 06:47:37 +0000] [218292] [INFO] Shutting down: Master
+[2025-01-13 06:47:38 +0000] [219260] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:47:38 +0000] [219260] [INFO] Listening at: http://127.0.0.1:8000 (219260)
+[2025-01-13 06:47:38 +0000] [219260] [INFO] Using worker: sync
+[2025-01-13 06:47:38 +0000] [219262] [INFO] Booting worker with pid: 219262
+[2025-01-13 06:47:38 +0000] [219263] [INFO] Booting worker with pid: 219263
+[2025-01-13 06:47:38 +0000] [219266] [INFO] Booting worker with pid: 219266
+[2025-01-13 06:47:39 +0000] [219267] [INFO] Booting worker with pid: 219267
+[2025-01-13 06:48:15,150] ERROR in app: Exception on /answer [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 98, in create_answer
+    print(request.get_jason())
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'Request' object has no attribute 'get_jason'. Did you mean: 'get_json'?
+[2025-01-13 06:50:21 +0000] [219260] [INFO] Handling signal: term
+[2025-01-13 06:50:21 +0000] [219262] [INFO] Worker exiting (pid: 219262)
+[2025-01-13 06:50:21 +0000] [219263] [INFO] Worker exiting (pid: 219263)
+[2025-01-13 06:50:21 +0000] [219266] [INFO] Worker exiting (pid: 219266)
+[2025-01-13 06:50:21 +0000] [219267] [INFO] Worker exiting (pid: 219267)
+[2025-01-13 06:50:21 +0000] [219260] [ERROR] Worker (pid:219262) was sent SIGTERM!
+[2025-01-13 06:50:22 +0000] [219260] [ERROR] Worker (pid:219263) was sent SIGTERM!
+[2025-01-13 06:50:22 +0000] [219260] [ERROR] Worker (pid:219266) was sent SIGTERM!
+[2025-01-13 06:50:22 +0000] [219260] [INFO] Shutting down: Master
+[2025-01-13 06:50:24 +0000] [220055] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:50:24 +0000] [220055] [INFO] Listening at: http://127.0.0.1:8000 (220055)
+[2025-01-13 06:50:24 +0000] [220055] [INFO] Using worker: sync
+[2025-01-13 06:50:24 +0000] [220056] [INFO] Booting worker with pid: 220056
+[2025-01-13 06:50:24 +0000] [220057] [INFO] Booting worker with pid: 220057
+[2025-01-13 06:50:24 +0000] [220060] [INFO] Booting worker with pid: 220060
+[2025-01-13 06:50:24 +0000] [220061] [INFO] Booting worker with pid: 220061
+[2025-01-13 06:50:31,217] ERROR in app: Exception on /answer [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 99, in create_answer
+    answer = answers.create_answer(request.get_json())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/answers.py", line 10, in create_answer
+    user_id=data['user_id'],
+            ~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[2025-01-13 06:52:40,713] ERROR in app: Exception on /answer [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 99, in create_answer
+    answer = answers.create_answer(request.get_json())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/answers.py", line 10, in create_answer
+    user_id=data['user_id'],
+            ~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[2025-01-13 06:53:25 +0000] [220055] [INFO] Handling signal: term
+[2025-01-13 06:53:25 +0000] [220056] [INFO] Worker exiting (pid: 220056)
+[2025-01-13 06:53:25 +0000] [220057] [INFO] Worker exiting (pid: 220057)
+[2025-01-13 06:53:25 +0000] [220060] [INFO] Worker exiting (pid: 220060)
+[2025-01-13 06:53:25 +0000] [220061] [INFO] Worker exiting (pid: 220061)
+[2025-01-13 06:53:26 +0000] [220055] [ERROR] Worker (pid:220056) was sent SIGTERM!
+[2025-01-13 06:53:26 +0000] [220055] [ERROR] Worker (pid:220057) was sent SIGTERM!
+[2025-01-13 06:53:26 +0000] [220055] [ERROR] Worker (pid:220060) was sent SIGTERM!
+[2025-01-13 06:53:26 +0000] [220055] [INFO] Shutting down: Master
+[2025-01-13 06:53:28 +0000] [221137] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:53:28 +0000] [221137] [INFO] Listening at: http://127.0.0.1:8000 (221137)
+[2025-01-13 06:53:28 +0000] [221137] [INFO] Using worker: sync
+[2025-01-13 06:53:28 +0000] [221139] [INFO] Booting worker with pid: 221139
+[2025-01-13 06:53:28 +0000] [221140] [INFO] Booting worker with pid: 221140
+[2025-01-13 06:53:28 +0000] [221142] [INFO] Booting worker with pid: 221142
+[2025-01-13 06:53:28 +0000] [221144] [INFO] Booting worker with pid: 221144
+[2025-01-13 06:53:32,280] ERROR in app: Exception on /answer [POST]
+Traceback (most recent call last):
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/.venv/lib64/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/routes.py", line 99, in create_answer
+    answer = answers.create_answer(request.get_json())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ec2-user/test_form/app/services/answers.py", line 10, in create_answer
+    user_id=data['user_id'],
+            ~~~~^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+[2025-01-13 06:57:33 +0000] [221137] [INFO] Handling signal: term
+[2025-01-13 06:57:33 +0000] [221139] [INFO] Worker exiting (pid: 221139)
+[2025-01-13 06:57:33 +0000] [221140] [INFO] Worker exiting (pid: 221140)
+[2025-01-13 06:57:33 +0000] [221142] [INFO] Worker exiting (pid: 221142)
+[2025-01-13 06:57:33 +0000] [221144] [INFO] Worker exiting (pid: 221144)
+[2025-01-13 06:57:34 +0000] [221137] [ERROR] Worker (pid:221139) was sent SIGTERM!
+[2025-01-13 06:57:34 +0000] [221137] [ERROR] Worker (pid:221140) was sent SIGTERM!
+[2025-01-13 06:57:34 +0000] [221137] [ERROR] Worker (pid:221142) was sent SIGTERM!
+[2025-01-13 06:57:34 +0000] [221137] [INFO] Shutting down: Master
+[2025-01-13 06:57:36 +0000] [221637] [INFO] Starting gunicorn 23.0.0
+[2025-01-13 06:57:36 +0000] [221637] [INFO] Listening at: http://127.0.0.1:8000 (221637)
+[2025-01-13 06:57:36 +0000] [221637] [INFO] Using worker: sync
+[2025-01-13 06:57:36 +0000] [221638] [INFO] Booting worker with pid: 221638
+[2025-01-13 06:57:36 +0000] [221639] [INFO] Booting worker with pid: 221639
+[2025-01-13 06:57:36 +0000] [221642] [INFO] Booting worker with pid: 221642
+[2025-01-13 06:57:36 +0000] [221643] [INFO] Booting worker with pid: 221643

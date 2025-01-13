@@ -33,3 +33,8 @@ def get_question_sort_by_sqe():
     )
     return [question.to_dict() for question in questions]
 
+
+def get_question_count():
+    question = Question.query.filter_by(is_active=True).all()
+    count = len(question)
+    return count

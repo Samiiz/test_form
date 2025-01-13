@@ -84,7 +84,7 @@ def count_question():
         return jsonify({"total": count})
 
 
-@routes.route("/answers", methods=["GET", "POST"])
+@routes.route("/submit", methods=["GET", "POST"])
 def submit_answer():
     if request.method == "POST":
         for answer in request.get_json():

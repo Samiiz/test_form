@@ -20,6 +20,9 @@ echo
 echo -e "MySQL version is: $mysql_version"
 echo
 
+# MySQL 실행
+sudo systemctl start mysqld
+
 # MySQL 초기 비밀번호 확인 및 저장
 sudo grep "temporary password" /var/log/mysqld.log | awk '{print $NF}' > mysql_password.txt
 echo "The default MySQL password has been saved to 'mysql_password.txt'."
@@ -31,7 +34,7 @@ echo "1. Log in to MySQL using the default password:"
 echo "   mysql -u root -p"
 echo
 echo "2. Change the root password using the following SQL command:"
-echo "   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword!123';"
+echo "   ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPsword!12as3';"
 echo
 echo "3. Create a new schema using the following SQL command:"
 echo "   CREATE DATABASE your_schema_name;"

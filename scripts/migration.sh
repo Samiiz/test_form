@@ -5,7 +5,7 @@ set -e  # 오류 발생 시 즉시 종료
 # 오류 발생 시 오류 메시지를 출력하는 함수
 trap 'echo "Error occurred in script at line $LINENO"; exit 1' ERR
 
-echo "==== Flask Migration ===="
+echo "==== Check Virtual environment ===="
 echo
 
 # 스크립트가 실행된 디렉토리에서 루트 디렉토리 추정
@@ -30,10 +30,12 @@ else
     echo "Virtual environment is already active: $VIRTUAL_ENV"
 fi
 
+echo "==== Starting Migration ===="
+echo
+
 # Flask 마이그레이션 작업
 flask db init
 flask db migrate
 flask db upgrade
 
 echo "==== Migration Completed ===="
-

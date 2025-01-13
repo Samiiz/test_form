@@ -1,8 +1,9 @@
-from config import db
 from flask import Flask
 from flask_migrate import Migrate
-from app.routes import routes
+
 import app.models
+from app.routes import routes
+from config import db
 
 migrate = Migrate()
 
@@ -21,4 +22,3 @@ def create_app():
     application.register_blueprint(routes)
 
     return application
-

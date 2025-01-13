@@ -6,6 +6,7 @@ from config import db
 
 KST = ZoneInfo("Asia/Seoul")
 
+
 class BaseModel(db.Model):
     __abstract__ = True
     id = db.Column(db.Integer, primary_key=True)
@@ -13,9 +14,12 @@ class BaseModel(db.Model):
         db.DateTime, default=lambda: datetime.now(tz=KST), nullable=False
     )
     updated_at = db.Column(
-        db.DateTime, default=lambda: datetime.now(tz=KST),
-        onupdate=lambda: datetime.now(tz=KST), nullable=False
+        db.DateTime,
+        default=lambda: datetime.now(tz=KST),
+        onupdate=lambda: datetime.now(tz=KST),
+        nullable=False,
     )
+
 
 class AgeStatus(Enum):
     teen = "teen"

@@ -13,4 +13,3 @@ class Config:
     SQLALCHEMY_MAX_OVERFLOW = 5
     SQLALCHEMY_ECHO = False
     reload = True
-

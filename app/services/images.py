@@ -1,5 +1,3 @@
-from app.models import Image
-
 from flask import jsonify, request
 
 from app.models import Image
@@ -32,7 +30,7 @@ def get_all_images():
     images = Image.query.all()
     return [image.to_dict() for image in images]
 
+
 def get_main_image():
     image = Image.query.filter_by(type="main").first()
     return image
-

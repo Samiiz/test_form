@@ -24,3 +24,4 @@ def submit_answer(data):
     db.session.commit()
 
     return
+

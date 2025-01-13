@@ -52,10 +52,10 @@ def count_question():
 def submit_answer():
     if request.method == 'POST':
         for answer in request.get_json():
-            answers.create_answer(answer)
-            user_id = int(answer.user_id)
-#        user_id = int(session.get('user_id'))
-#        session.pop('user_id')
+            print(answer)
+            answers.submit_answer(data=answer)
+        user_id=int(request.get_json()[0]["userId"])
+        print(user_id)
 
         return jsonify({"message": f"User: {user_id}'s answers Success Create"}), 201
 

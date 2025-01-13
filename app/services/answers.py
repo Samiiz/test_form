@@ -14,3 +14,13 @@ def create_answer(data):
     db.session.commit()
 
     return answer
+
+def submit_answer(data):
+    answer = Answer(
+    user_id=int(data['userId']),
+    choice_id=data['choiceId'],
+    )
+    db.session.add(answer)
+    db.session.commit()
+
+    return

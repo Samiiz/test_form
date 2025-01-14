@@ -5,7 +5,7 @@ db = SQLAlchemy()
 
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:Password1234!@localhost/form"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:1234@localhost/form"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_POOL_SIZE = 10
     SQLALCHEMY_POOL_TIMEOUT = 5

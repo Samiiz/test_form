@@ -23,5 +23,5 @@ def submit_answer(data):
     db.session.add(answer)
     db.session.commit()
 
-    return
+    return answer
 

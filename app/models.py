@@ -1,13 +1,12 @@
 from datetime import datetime
-from enum import Enum
 from zoneinfo import ZoneInfo
+from flask import abort
 
 from config import db
 
 KST = ZoneInfo("Asia/Seoul")
 
-
-class BaseModel(db.Model):
+class Common(db.Model):
     __abstract__ = True
     id = db.Column(db.Integer, primary_key=True)
     created_at = db.Column(
@@ -21,49 +20,64 @@ class BaseModel(db.Model):
     )
 
 
-class AgeStatus(Enum):
-    teen = "teen"
-    twenty = "twenty"
-    thirty = "thirty"
-    fourty = "fourty"
-    fifty = "fifty"
-
-
-class GenderStatus(Enum):
-    male = "male"
-    female = "female"
-
-
-class ImageStatus(Enum):
-    main = "main"
-    sub = "sub"
-
-
-class User(BaseModel):
+class User(Common):
     __tablename__ = "users"
     name = db.Column(db.String(10), nullable=False)
-    age = db.Column(db.Enum(AgeStatus), nullable=False)
-    gender = db.Column(db.Enum(GenderStatus), nullable=False)
+    age = db.Column(db.String(10), nullable=False)
+    gender = db.Column(db.String(10), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
+
+    __table_args__ = (
+        db.CheckConstraint("age IN ('teen', 'twenty', 'thirty', 'fourty', 'fifty')", name="check_age"),
+        db.CheckConstraint("gender IN ('male', 'female')", name="check_gender"),
+    )
+
+    def __init__(self, name, age, gender, email):
+        allowed_ages = {"teen", "twenty", "thirty", "fourty", "fifty"}
+        allowed_genders = {"male", "female"}
+
+        if User.query.filter_by(email=email).first():
+            abort(400, "이미 존재하는 계정 입니다.")
+
+        if age not in allowed_ages:
+            abort(400, f"Invalid age: {age}. Allowed values: {allowed_ages}")
+
+        if gender not in allowed_genders:
+            abort(400, f"Invalid gender: {gender}. Allowed values: {allowed_genders}")
+
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.email = email
 
     def to_dict(self):
         return {
             "id": self.id,
             "name": self.name,
-            "age": self.age.value if hasattr(self.age, "value") else self.age,
-            "gender": (
-                self.gender.value if hasattr(self.gender, "value") else self.gender
-            ),
+            "age": self.age,
+            "gender": self.gender,
             "email": self.email,
             "created_at": self.created_at.isoformat(),
             "updated_at": self.updated_at.isoformat(),
         }
 
 
-class Image(BaseModel):
+class Image(Common):
     __tablename__ = "images"
     url = db.Column(db.TEXT, nullable=False)
-    type = db.Column(db.Enum(ImageStatus), nullable=False)
+    type = db.Column(db.String(10), nullable=False)
+
+    __table_args__ = (
+        db.CheckConstraint("type IN ('main', 'sub')", name="check_image_type"),
+    )
+
+    def __init__(self, url, image_type):
+        allowed_type = {"main", "sub"}
+        if image_type not in allowed_type:
+            abort(400, f"Invalid type: {type}. Allowed values: {allowed_type}")
+
+        self.url = url
+        self.type = type
 
     questions = db.relationship("Question", back_populates="image")
 
@@ -77,7 +91,7 @@ class Image(BaseModel):
         }
 
 
-class Question(BaseModel):
+class Question(Common):
     __tablename__ = "questions"
     title = db.Column(db.String(100), nullable=False)
     is_active = db.Column(db.Boolean, nullable=False, default=True)
@@ -99,7 +113,7 @@ class Question(BaseModel):
         }
 
 
-class Choices(BaseModel):
+class Choices(Common):
     __tablename__ = "choices"
     content = db.Column(db.Text, nullable=False)
     is_active = db.Column(db.Boolean, nullable=False, default=True)
@@ -119,7 +133,7 @@ class Choices(BaseModel):
         }
 
 
-class Answer(BaseModel):
+class Answer(Common):
     __tablename__ = "answers"
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
     choice_id = db.Column(db.Integer, db.ForeignKey("choices.id"))

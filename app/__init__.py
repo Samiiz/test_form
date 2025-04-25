@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_migrate import Migrate
 
 import app.models
@@ -18,6 +18,12 @@ def create_app():
     db.init_app(application)
 
     migrate.init_app(application, db)
+
+    @application.errorhandler(400)
+    def handle_bad_request(error):
+        response = jsonify({"message": error.description})  # JSON 형식 응답
+        response.status_code = 400
+        return response
 
     # 블루 프린트 등록
     application.register_blueprint(routes)
